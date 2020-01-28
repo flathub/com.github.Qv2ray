@@ -72,18 +72,14 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Qv2ray/Qv2ray.git",
-                    "tag": "v2.0.0",
-                    "commit": "cb5f164bfb773ef4304340e349a94c2c72c3105e"
+                    "tag": "v2.0.1",
+                    "commit": "275f0c8589967e8d9799d6a263f95ee2a2453e3c"
                 },
                 {
                     "type": "shell",
                     "commands": [
                         "tools/grpc_gen.sh"
                     ]
-                },
-                {
-                    "type": "patch",
-                    "path": "use-xdg-dir.patch"
                 }
             ]
         }
