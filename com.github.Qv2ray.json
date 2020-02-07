@@ -45,12 +45,13 @@
         },
         {
             "name": "grpc",
-            "no-autogen": true,
+            "buildsystem": "cmake",
             "cleanup": [
                 "/bin"
             ],
-            "make-install-args": [
-                "prefix=/app"
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DgRPC_SSL_PROVIDER=package"
             ],
             "sources": [
                 {
