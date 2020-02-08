@@ -3,6 +3,9 @@
     "runtime": "org.kde.Platform",
     "runtime-version": "5.14",
     "sdk": "org.kde.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.golang"
+    ],
     "command": "qv2ray",
     "rename-desktop-file": "qv2ray.desktop",
     "rename-icon": "qv2ray",
@@ -66,6 +69,8 @@
             "buildsystem": "qmake",
             "config-opts": [
                 "CONFIG+=no_increase_build_number with_metainfo",
+                "DEFINES += QV2RAY_DEFAULT_VCORE_PATH=\\\"/app/bin/v2ray\\\"",
+                "DEFINES += QV2RAY_DEFAULT_VASSETS_PATH=\\\"/app/bin\\\"",
                 "PREFIX=/app",
                 "LIBS+=-L/app/lib"
             ],
@@ -81,6 +86,16 @@
                         "tools/grpc_gen.sh"
                     ]
                 }
+            ]
+        },
+        {
+            "name": "v2ray",
+            "buildsystem": "simple",
+            "append-path": "/usr/lib/sdk/golang/bin",
+            "build-commands": [
+                ". /usr/lib/sdk/golang/enable.sh; export GOPATH=$PWD; go get -u v2ray.com/core/...",
+                "go build -o /app/bin/v2ray v2ray.com/core/main",
+                "go build -o /app/bin/v2ctl v2ray.com/core/infra/control/main"
             ]
         }
     ]
