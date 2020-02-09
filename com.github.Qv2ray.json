@@ -98,8 +98,8 @@
             ],
             "append-path": "/usr/lib/sdk/golang/bin",
             "build-commands": [
-                "go build -o /app/bin/v2ray -ldflags '-s -w'",
-                "go build -o /app/bin/v2ctl -tags confonly -ldflags '-s -w'"
+                "/usr/lib/sdk/golang/bin/go build -o /app/bin/v2ray -ldflags '-s -w'",
+                "/usr/lib/sdk/golang/bin/go build -o /app/bin/v2ctl -tags confonly -ldflags '-s -w'"
             ],
             "sources": [
                 {
