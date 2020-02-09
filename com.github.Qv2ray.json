@@ -80,36 +80,6 @@
                     "commands": [
                         "tools/grpc_gen.sh"
                     ]
-                },
-                {
-                    "type": "patch",
-                    "path": "00001-v2ray-path.patch"
-                }
-            ]
-        },
-        {
-            "name": "v2ray",
-            "buildsystem": "simple",
-            "build-commands": [
-                "install -Dm755 v2ray /app/bin/",
-                "install -Dm755 v2ctl /app/bin/"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/v2ray/v2ray-core/releases/download/v4.22.1/v2ray-linux-64.zip",
-                    "sha256": "4a93d05127deb1f921ad88dca0c5cde5d7e664531a1b6bfdebfa4d4bac1c6348",
-                    "only-arches": [
-                        "x86_64"
-                    ]
-                },
-                {
-                    "type": "archive",
-                    "url": "https://github.com/v2ray/v2ray-core/releases/download/v4.22.1/v2ray-linux-arm64.zip",
-                    "sha256": "6305605ff9eb2a6c9a00c05ddf0dd5fba48bc8a9c8a6e491ab03da06644c3ed2",
-                    "only-arches": [
-                        "aarch64"
-                    ]
                 }
             ]
         }
