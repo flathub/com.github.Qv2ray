@@ -69,8 +69,6 @@
             "buildsystem": "qmake",
             "config-opts": [
                 "CONFIG+=no_increase_build_number with_metainfo",
-                "DEFINES += QV2RAY_DEFAULT_VCORE_PATH=\\\"\/app\/bin\/v2ray\\\"",
-                "DEFINES += QV2RAY_DEFAULT_VASSETS_PATH=\\\"\/app\/bin\\\"",
                 "PREFIX=/app",
                 "LIBS+=-L/app/lib"
             ],
@@ -85,6 +83,10 @@
                     "commands": [
                         "tools/grpc_gen.sh"
                     ]
+                },
+                {
+                    "type": "patch",
+                    "path": "00001-v2ray-path.patch"
                 }
             ]
         },

@@ -1,0 +1,18 @@
+diff --git a/src/Qv2rayBase.hpp b/src/Qv2rayBase.hpp
+index ffc7a51..3400680 100644
+--- a/src/Qv2rayBase.hpp
++++ b/src/Qv2rayBase.hpp
+@@ -41,11 +41,11 @@ extern bool isDebug;
+ #define QV2RAY_GENERATED_FILE_PATH (QV2RAY_GENERATED_DIR + "config.gen.json")
+ 
+ #if ! defined (QV2RAY_DEFAULT_VCORE_PATH) && ! defined (QV2RAY_DEFAULT_VASSETS_PATH)
+-#   define QV2RAY_DEFAULT_VASSETS_PATH (QV2RAY_CONFIG_DIR + "vcore/")
++#   define QV2RAY_DEFAULT_VASSETS_PATH ("/app/bin")
+ #   ifdef Q_OS_WIN
+ #       define QV2RAY_DEFAULT_VCORE_PATH  (QV2RAY_CONFIG_DIR + "vcore/v2ray.exe")
+ #   else
+-#       define QV2RAY_DEFAULT_VCORE_PATH  (QV2RAY_CONFIG_DIR + "vcore/v2ray")
++#       define QV2RAY_DEFAULT_VCORE_PATH  ("/app/bin/v2ray")
+ #   endif
+ #elif defined (QV2RAY_DEFAULT_VCORE_PATH) && defined (QV2RAY_DEFAULT_VASSETS_PATH)
+ // ---- Using user-specified VCore and VAssets path
