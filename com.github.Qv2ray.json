@@ -65,7 +65,7 @@
             "name": "qv2ray",
             "buildsystem": "qmake",
             "config-opts": [
-                "CONFIG+=no_increase_build_number with_metainfo",
+                "CONFIG+=no_increase_build_number with_metainfo use_grpc",
                 "PREFIX=/app",
                 "LIBS+=-L/app/lib"
             ],
@@ -73,7 +73,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Qv2ray/Qv2ray.git",
-                    "branch": "455727c"
+                    "tag": "v2.1.1",
+                    "commit": "0e8e907b4af3f715b6e238e9759706451c23dd0a"
                 },
                 {
                     "type": "shell",
