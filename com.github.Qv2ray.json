@@ -75,12 +75,6 @@
                     "url": "https://github.com/Qv2ray/Qv2ray.git",
                     "tag": "v2.1.1",
                     "commit": "0e8e907b4af3f715b6e238e9759706451c23dd0a"
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "tools/grpc_gen.sh"
-                    ]
                 }
             ]
         }
