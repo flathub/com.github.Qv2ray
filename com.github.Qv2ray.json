@@ -56,8 +56,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/grpc/grpc.git",
-                    "tag": "v1.27.2",
-                    "commit": "425137634b7fb96d16b72633bc13296213af94c5"
+                    "tag": "v1.27.3",
+                    "commit": "e73882dc0fcedab1ffe789e44ed6254819639ce3"
                 }
             ]
         },
