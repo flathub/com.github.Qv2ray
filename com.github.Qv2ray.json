@@ -63,18 +63,17 @@
         },
         {
             "name": "qv2ray",
-            "buildsystem": "qmake",
+            "buildsystem": "cmake",
             "config-opts": [
-                "CONFIG+=no_increase_build_number with_metainfo use_grpc",
-                "PREFIX=/app",
-                "LIBS+=-L/app/lib"
+                "-DEMBED_TRANSLATIONS=ON",
+                "-DCMAKE_BUILD_TYPE=Release"
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/Qv2ray/Qv2ray.git",
-                    "tag": "v2.1.2",
-                    "commit": "05b2b5ccaffe67a05335202e52495d643811daa3"
+                    "tag": "v2.2.3",
+                    "commit": "d8ffdb6e8f82629af5a3e901d346bb78fa5ae9a0"
                 }
             ]
         }
