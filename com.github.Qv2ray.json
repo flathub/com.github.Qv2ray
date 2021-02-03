@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.Qv2ray",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.14",
+    "runtime-version": "5.15",
     "sdk": "org.kde.Sdk",
     "command": "qv2ray",
     "rename-desktop-file": "qv2ray.desktop",
@@ -38,8 +38,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/protocolbuffers/protobuf.git",
-                    "tag": "v3.12.3",
-                    "commit": "31ebe2ac71400344a5db91ffc13c4ddfb7589f92"
+                    "tag": "v3.14.0",
+                    "commit": "2514f0bd7da7e2af1bed4c5d1b84f031c4d12c10"
                 }
             ]
         },
@@ -49,15 +49,13 @@
             "cleanup": [
                 "/bin"
             ],
-            "make-install-args": [
-                "prefix=/app"
-            ],
+            "buildsystem": "cmake",
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/grpc/grpc.git",
-                    "tag": "v1.30.0",
-                    "commit": "9655f1f6449dca36312489f9c82560c32050af71"
+                    "tag": "v1.35.0",
+                    "commit": "257d0045ab958eb767a3591c88e9d0c2bdf4b916"
                 }
             ]
         },
@@ -72,8 +70,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Qv2ray/Qv2ray.git",
-                    "tag": "v2.5.0",
-                    "commit": "16b22386257916edf9de0b77845c875b062b5776"
+                    "tag": "v2.6.3",
+                    "commit": "912fe1b040544214b2f56c52e6da9fdb43c11f26"
                 }
             ]
         }
