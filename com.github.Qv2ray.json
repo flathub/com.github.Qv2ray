@@ -71,8 +71,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Qv2ray/Qv2ray.git",
-                    "tag": "v2.6.3",
-                    "commit": "912fe1b040544214b2f56c52e6da9fdb43c11f26"
+                    "commit": "d784acd76ce2bd8a819305479b53234da29be4e6"
                 }
             ]
         }
