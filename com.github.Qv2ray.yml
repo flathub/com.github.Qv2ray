@@ -42,14 +42,18 @@ modules:
   - name: grpc
     cleanup:
       - "/bin"
-    buildsystem: cmake
+    buildsystem: cmake-ninja
+    config-opts:
+      - "-DgRPC_PROTOBUF_PROVIDER=package"
+      - "-DgRPC_ZLIB_PROVIDER=package"
+      - "-DgRPC_SSL_PROVIDER=package"
     sources:
       - type: git
         url: https://github.com/grpc/grpc.git
         tag: v1.35.0
         commit: 257d0045ab958eb767a3591c88e9d0c2bdf4b916
   - name: qv2ray
-    buildsystem: cmake
+    buildsystem: cmake-ninja
     config-opts:
       - "-DEMBED_TRANSLATIONS=ON"
     cleanup:
